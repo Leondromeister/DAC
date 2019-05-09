@@ -1,0 +1,36 @@
+"AddonInfo"
+{
+	"maps"			"normal"
+	"IsPlayable"	"1"
+	"normal"
+	{
+		"MaxPlayers"                    "8"
+	}
+	"Default_Keys"
+    {
+        "01"
+        {
+            "Key"       "1"
+            "Command"   "+BackHome"
+            "Name"      "BackHome"
+        }
+        "02"
+        {
+            "Key"       "TAB"
+            "Command"   "+TabHome"
+            "Name"      "TabHome"
+        }
+        "11"
+        {
+            "Key"       "SPACE"
+            "Command"   "+TogglePanel"
+            "Name"      "TogglePanel"
+        }
+        "12"
+        {
+            "Key"       "F9"
+            "Command"   "+ToggleF9"
+            "Name"      "ToggleF9"
+        }
+    }
+}
