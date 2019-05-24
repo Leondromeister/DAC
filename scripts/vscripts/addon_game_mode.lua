@@ -523,6 +523,7 @@ function Precache( context )
 		"soundevents/custom_sounds.vsndevts",
 		"models/shudaixiong/model/shudaixiong/shudaixiong.vmdl",
 		"models/shudaixiong/model/shudaixiong_flying/shudaixiong_flying.vmdl",
+		"models/courier/baby_rosh/babyroshan_elemental.vmdl",
 	} 
     print("Precache...")
 	local t=table.maxn(mxx)
@@ -1580,7 +1581,6 @@ function DAC:InitGameMode()
 		h118 = "models/items/courier/snail/courier_snail.vmdl",
 		h119 = "models/items/courier/teron/teron.vmdl",
 		h120 = "models/items/courier/xianhe_stork/xianhe_stork.vmdl",
-
 		h121 = "models/items/courier/starladder_grillhound/starladder_grillhound.vmdl",
 		h122 = "models/items/courier/pw_zombie/pw_zombie.vmdl",
 		h123 = "models/items/courier/raiq/raiq.vmdl",
@@ -1590,7 +1590,6 @@ function DAC:InitGameMode()
 		h127 = "models/courier/mighty_boar/mighty_boar.vmdl",
 		h128 = "models/items/courier/onibi_lvl_03/onibi_lvl_03.vmdl",
 		h129 = "models/items/courier/echo_wisp/echo_wisp.vmdl",  --蠕行水母
-
 		h130 = "models/courier/sw_donkey/sw_donkey.vmdl", --驴法师new
 		h131 = "models/items/courier/gnomepig/gnomepig.vmdl", --丰臀公主new
 		h132 = "models/items/furion/treant/ravenous_woodfang/ravenous_woodfang.vmdl",--焚牙树精new
@@ -1599,6 +1598,7 @@ function DAC:InitGameMode()
 		h135 = "models/items/courier/jumo_dire/jumo_dire.vmdl",
 		h136 = "models/items/courier/courier_ti9/courier_ti9.vmdl",
 		h137 = "models/items/courier/courier_ti9/courier_ti9_lvl2/courier_ti9_lvl2.vmdl",
+		h138 = "models/props_gameplay/donkey.vmdl",
 
 		h199 = "models/gezi/ge.vmdl",
 
@@ -1613,7 +1613,6 @@ function DAC:InitGameMode()
 		h208 = "models/items/courier/faceless_rex/faceless_rex.vmdl",
 		h209 = "models/items/courier/tinkbot/tinkbot.vmdl",
 		h210 = "models/items/courier/lilnova/lilnova.vmdl",
-
 		h211 = "models/items/courier/amphibian_kid/amphibian_kid.vmdl",
 		h212 = "models/courier/venoling/venoling.vmdl",
 		h213 = "models/courier/juggernaut_dog/juggernaut_dog.vmdl",
@@ -1632,7 +1631,6 @@ function DAC:InitGameMode()
 		h226 = "models/items/courier/hermit_crab/hermit_crab.vmdl", --螃蟹1
 		h227 = "models/items/courier/hermit_crab/hermit_crab_boot.vmdl", --螃蟹2
 		h228 = "models/items/courier/hermit_crab/hermit_crab_shield.vmdl", --螃蟹3
-
 		h229 = "models/courier/donkey_unicorn/donkey_unicorn.vmdl", --竭智法师new
 		h230 = "models/items/courier/white_the_crystal_courier/white_the_crystal_courier.vmdl", --蓝心白隼new
 		h231 = "models/items/furion/treant/furion_treant_nelum_red/furion_treant_nelum_red.vmdl",--莲花人new
@@ -1643,10 +1641,11 @@ function DAC:InitGameMode()
 		h236 = "models/items/courier/flightless_dod/flightless_dod.vmdl", --嘟嘟鸟
 		h237 = "models/items/courier/frostivus2018_courier_serac_the_seal/frostivus2018_courier_serac_the_seal.vmdl",
 		h238 = "models/items/courier/pangolier_squire/pangolier_squire.vmdl",
-
 		h239 = "models/hujing_wangyu/hujing.vmdl",
 		h240 = "models/items/courier/courier_ti9/courier_ti9_lvl3/courier_ti9_lvl3.vmdl",
-		
+		h241 = "models/items/courier/axolotl/axolotl.vmdl",
+		h242 = "models/items/courier/snaggletooth_red_panda/snaggletooth_red_panda.vmdl",
+		h243 = "models/items/courier/xianhe_stork/xianhe_stork.vmdl",
 
 		--珍藏信使 pro
 		h301 = "models/items/courier/bookwyrm/bookwyrm.vmdl",
@@ -1658,7 +1657,6 @@ function DAC:InitGameMode()
 		h307 = "models/items/courier/green_jade_dragon/green_jade_dragon.vmdl",
 		h308 = "models/courier/drodo/drodo.vmdl",
 		h309 = "models/courier/mech_donkey/mech_donkey.vmdl",
-
 		h310 = "models/courier/donkey_crummy_wizard_2014/donkey_crummy_wizard_2014.vmdl",
 		h311 = "models/courier/octopus/octopus.vmdl",
 		h312 = "models/items/courier/scribbinsthescarab/scribbinsthescarab.vmdl",
@@ -1677,7 +1675,6 @@ function DAC:InitGameMode()
 		h325 = "models/items/courier/hermit_crab/hermit_crab_travelboot.vmdl", --螃蟹5
 		h326 = "models/items/courier/hermit_crab/hermit_crab_lotus.vmdl", --螃蟹6
 		h327 = "models/courier/donkey_ti7/donkey_ti7.vmdl",
-
 		h328 = "models/items/courier/shibe_dog_cat/shibe_dog_cat.vmdl", --天猫地狗new
 		h329 = "models/items/furion/treant/hallowed_horde/hallowed_horde.vmdl",--万圣树群new
 		h330 = "models/courier/flopjaw/flopjaw.vmdl",--大嘴咬人箱new
@@ -1692,6 +1689,20 @@ function DAC:InitGameMode()
 		h339 = "models/items/courier/azuremircourierfinal/azuremircourierfinal.vmdl",
 		h340 = "models/items/courier/courier_ti9/courier_ti9_lvl6/courier_ti9_lvl6.vmdl",
 		h341 = "models/bilibilitv/model/tv.vmdl",
+		h342 = "models/courier/baby_rosh/babyroshan.vmdl",
+		h343 = "models/courier/baby_rosh/babyroshan.vmdl",
+		h344 = "models/courier/baby_rosh/babyroshan.vmdl",
+		h345 = "models/courier/baby_winter_wyvern/baby_winter_wyvern.vmdl",
+		h346 = "models/courier/beetlejaws/mesh/beetlejaws.vmdl",
+		h347 = "models/courier/doom_demihero_courier/doom_demihero_courier.vmdl",
+		h348 = "models/courier/huntling/huntling.vmdl",
+		h349 = "models/courier/minipudge/minipudge.vmdl",
+		h350 = "models/courier/seekling/seekling.vmdl",
+		h351 = "models/courier/venoling/venoling.vmdl",
+		h352 = "models/items/courier/axolotl/axolotl.vmdl",
+		h353 = "models/items/courier/devourling/devourling.vmdl",
+		h354 = "models/courier/baby_rosh/babyroshan_elemental.vmdl",
+		h355 = "models/courier/baby_rosh/babyroshan_elemental.vmdl",
 
 		h399 = "models/courier/baby_rosh/babyroshan_winter18.vmdl",--姜饼肉山
 
@@ -1703,7 +1714,6 @@ function DAC:InitGameMode()
 		h405 = "models/items/courier/vigilante_fox_red/vigilante_fox_red.vmdl",
 		h406 = "models/items/courier/virtus_werebear_t3/virtus_werebear_t3.vmdl",
 		h407 = "models/items/courier/throe/throe.vmdl",
-
 		h408 = "models/items/courier/vaal_the_animated_constructradiant/vaal_the_animated_constructradiant.vmdl",
 		h409 = "models/items/courier/vaal_the_animated_constructdire/vaal_the_animated_constructdire.vmdl",
 		h410 = "models/items/courier/carty/carty.vmdl",
@@ -1722,22 +1732,28 @@ function DAC:InitGameMode()
 		h423 = "models/items/courier/hermit_crab/hermit_crab_octarine.vmdl", --螃蟹7
 		h424 = "models/items/courier/hermit_crab/hermit_crab_skady.vmdl", --螃蟹8
 		h425 = "models/items/courier/hermit_crab/hermit_crab_aegis.vmdl", --螃蟹9
-
 		h426 = "models/items/furion/treant_flower_1.vmdl",--绽放树精new
 		h427 = "models/courier/smeevil_magic_carpet/smeevil_magic_carpet.vmdl",
 		h428 = "models/items/courier/mole_messenger/mole_messenger_lvl7.vmdl",--绿钻头金矿车老鼠
-
 		h499 = "models/items/courier/krobeling_gold/krobeling_gold.vmdl",--金dp
 		h429 = "models/items/courier/nilbog/nilbog.vmdl",--贪小疯魔
-
 		h430 = "models/courier/frull/frull_courier.vmdl", --灵犀弗拉尔
 		h431 = "models/items/courier/sltv_10_courier/sltv_10_courier.vmdl", --黄油小生
 		h432 = "models/items/courier/nian_courier/nian_courier.vmdl", --年兽宝宝
 		h433 = "models/courier/baby_rosh/babyroshan_ti9.vmdl",
 		h434 = "models/items/courier/courier_ti9/courier_ti9_lvl7/courier_ti9_lvl7.vmdl",
 		h435 = "models/shudaixiong/model/shudaixiong/shudaixiong.vmdl",
-
-		h444 = "models/props_gameplay/donkey.vmdl", 
+		h436 = "models/courier/baby_rosh/babyroshan.vmdl",
+		h437 = "models/courier/baby_rosh/babyroshan.vmdl",
+		h438 = "models/courier/baby_winter_wyvern/baby_winter_wyvern.vmdl",
+		h439 = "models/courier/flopjaw/flopjaw.vmdl",
+		h440 = "models/courier/juggernaut_dog/juggernaut_dog.vmdl",
+		h441 = "models/courier/smeevil_crab/smeevil_crab.vmdl",
+		h442 = "models/items/courier/axolotl/axolotl.vmdl",
+		h443 = "models/items/courier/fei_lian_blue/fei_lian_blue.vmdl",
+		h444 = "models/items/courier/wabbit_the_mighty_courier_of_heroes/wabbit_the_mighty_courier_of_heroes.vmdl",
+		h445 = "models/items/courier/wabbit_the_mighty_courier_of_heroes/wabbit_the_mighty_courier_of_heroes.vmdl",
+		h446 = "models/items/courier/wabbit_the_mighty_courier_of_heroes/wabbit_the_mighty_courier_of_heroes.vmdl",
 	}
 
 	GameRules:GetGameModeEntity().courier_flyup_effect_list = {
@@ -1754,6 +1770,38 @@ function DAC:InitGameMode()
 	GameRules:GetGameModeEntity().courier_ground_effect_list = {
 		h199 = "effect/gewugu/2.vpcf",
 		h303 = "particles/gem/brewmaster_drunken_haze_debuff_bubbles_2.vpcf",
+	}
+
+	GameRules:GetGameModeEntity().sm_hero_list_skin = {
+		h138 = 1,
+		h436 = 1,
+		h437 = 2,
+		h342 = 3,
+		h343 = 4,
+		h344 = 5,
+		h354 = 1,
+		h355 = 2,
+		h345 = 1,
+		h438 = 2,
+		h346 = 1,
+		h347 = 1,
+		h348 = 1,
+		h440 = 1,
+		h349 = 1,
+		h350 = 1,
+		h441 = 1,
+		h351 = 1,
+
+		h241 = 1,
+		h352 = 2,
+		h442 = 3,
+		h353 = 1,
+		h242 = 1,
+		h444 = 1,
+		h445 = 2,
+		h446 = 3,
+		h243 = 1,
+		h443 = 1,
 	}
 
 	GameRules:GetGameModeEntity().sm_hero_size = {
@@ -1780,7 +1828,6 @@ function DAC:InitGameMode()
 		h118 = 1.1,
 		h119 = 1.3,
 		h120 = 1.3,
-
 		h121 = 1.1,
 		h122 = 1.1,
 		h123 = 1.2,
@@ -1790,7 +1837,6 @@ function DAC:InitGameMode()
 		h127 = 1,
 		h128 = 1.1,
 		h129 = 1.2,  --蠕行水母
-
 		h130 = 1, --驴法师new
 		h131 = 1, --丰臀公主new
 		h132 = 0.7,--焚牙树精new
@@ -1799,6 +1845,7 @@ function DAC:InitGameMode()
 		h135 = 1.1,
 		h136 = 1.1,
 		h137 = 1.15,
+		h138 = 1.15,
 
 		h199 = 1.5,
 		--小英雄信使 ameteur
@@ -1844,6 +1891,9 @@ function DAC:InitGameMode()
 		h238 = 0.8,
 		h239 = 1.4,
 		h240 = 1.25,
+		h241 = 1.1,
+		h242 = 1.4,
+		h243 = 1.4,
 
 		--珍藏信使 pro
 		h301 = 1.3,
@@ -1889,6 +1939,20 @@ function DAC:InitGameMode()
 		h339 = 1.4,
 		h340 = 1.3,
 		h341 = 2.3,
+		h342 = 1.3,
+		h343 = 1.3,
+		h344 = 1.3,
+		h354 = 1.3,
+		h355 = 1.3,
+		h345 = 1.35,
+		h346 = 1.3,
+		h347 = 1.3,
+		h348 = 1.3,
+		h349 = 1.3,
+		h350 = 1.3,
+		h351 = 1.2,
+		h352 = 1.2,
+		h353 = 1.3,
 
 		h399 = 1.2,--姜饼肉山
 
@@ -1933,6 +1997,16 @@ function DAC:InitGameMode()
 		h433 = 1.35,
 		h434 = 1.4,
 		h435 = 1.1,
+		h438 = 1.45,
+		h440 = 1.2,
+		h441 = 1.4,
+		h442 = 1.3,
+		h444 = 1.4,
+		h445 = 1.4,
+		h446 = 1.4,
+		h443 = 1.4,
+		h436 = 1.4,
+		h437 = 1.4,
 
 		h444 = 1, 
 	}
@@ -1984,6 +2058,7 @@ function DAC:InitGameMode()
 		item_kuangzhanfu = "item_zhiliaozhihuan;item_xuwubaoshi",
 		item_bkb = "item_xiaofu;item_miyinchui",
 	}
+	GameRules:GetGameModeEntity().user_setting = {}
 end
 function InitHeros()
 	--拼接要向服务器发送的steamid数据
@@ -2034,6 +2109,17 @@ function InitHeros()
 				local hero = EntIndexToHScript(hero_index)
 				local player_id = hero:GetPlayerID()
 
+				if user_info.settings ~= nil then
+					GameRules:GetGameModeEntity().user_setting[steam_id] = json.decode(user_info.settings)
+					CustomNetTables:SetTableValue( "setting_table", "show_settings", { settings = user_info.settings, hehe = RandomInt(1,1000)})
+				else
+					GameRules:GetGameModeEntity().user_setting[steam_id] = {
+						is_click_select = 1,
+						is_auto_combine = 1,
+						is_bullet_show = 1,
+					}
+				end
+
 				if user_info.mmr_level < 19 then
 					hero.notbishop = true
 				end
@@ -2064,11 +2150,21 @@ function InitHeros()
 				local onduty_hero_long = user_info.onduty_hero
 				local onduty_hero = string.split(onduty_hero_long,'_')[1]
 				local onduty_hero_effect = string.split(onduty_hero_long,'_')[2] or ''
-
 				user_info['onduty_hero'] = onduty_hero
 				user_info['onduty_hero_effect'] = onduty_hero_effect
 
-				local init_hp = 100
+				AddAbilityAndSetLevel(hero,'pick_chess')
+				AddAbilityAndSetLevel(hero,'recall_chess')
+			    AddAbilityAndSetLevel(hero,'remove_chess')
+			    AddAbilityAndSetLevel(hero,'summon_hero')
+			    AddAbilityAndSetLevel(hero,'exp_book')
+				AddAbilityAndSetLevel(hero,'jiaoxie_wudi_hero')
+				AddAbilityAndSetLevel(hero,'wudi')
+			    AddAbilityAndSetLevel(hero,'no_hp_add')
+				--装饰信使
+				SetCourier(hero, onduty_hero, onduty_hero_effect)
+
+			    local init_hp = 100
 				GameRules:GetGameModeEntity().stat_info[steam_id] = {
 					hp = init_hp,
 					player_id = player_id,
@@ -2091,18 +2187,8 @@ function InitHeros()
 					buff = '',
 					hero_damage = 0,
 				}
-
-				local onduty_hero_model = GameRules:GetGameModeEntity().sm_hero_list[onduty_hero]
-
-				hero:SetOriginalModel(onduty_hero_model)
-				hero:SetModel(onduty_hero_model)
-				hero.init_model_scale = GameRules:GetGameModeEntity().sm_hero_size[onduty_hero] or 1
-				hero:SetModelScale(hero.init_model_scale)
-				hero.ori_model = onduty_hero_model
-
 				hero.onduty_hero = onduty_hero
 				hero.steam_id = steam_id
-				ShowCourierEffect(hero,1)
 
 				if user_info.is_crown ~= nil then
 					hero.is_crown = true
@@ -2110,20 +2196,7 @@ function InitHeros()
 				end
 
 				hero:MoveToPosition(hero:GetAbsOrigin())
-				AddAbilityAndSetLevel(hero,'pick_chess')
-				AddAbilityAndSetLevel(hero,'recall_chess')
-			    AddAbilityAndSetLevel(hero,'remove_chess')
-			    AddAbilityAndSetLevel(hero,'summon_hero')
-			    AddAbilityAndSetLevel(hero,'exp_book')
-
-			    if onduty_hero_effect ~= 'e000' then
-			    	AddAbilityAndSetLevel(hero,onduty_hero_effect)
-			    	hero.effect = onduty_hero_effect
-			    end
-
-				AddAbilityAndSetLevel(hero,'jiaoxie_wudi_hero')
-				AddAbilityAndSetLevel(hero,'wudi')
-			    AddAbilityAndSetLevel(hero,'no_hp_add')
+				
 			end
 			GameRules:GetGameModeEntity().user_info = t.user_info
 			CustomNetTables:SetTableValue( "dac_table", "player_info", { info = t.user_info, hehe = RandomInt(1,1000)})
@@ -2229,6 +2302,18 @@ function InitHeros()
 				user_info['onduty_hero'] = onduty_hero
 				user_info['onduty_hero_effect'] = onduty_hero_effect
 
+				AddAbilityAndSetLevel(hero,'pick_chess')
+				AddAbilityAndSetLevel(hero,'recall_chess')
+			    AddAbilityAndSetLevel(hero,'remove_chess')
+			    AddAbilityAndSetLevel(hero,'summon_hero')
+			    AddAbilityAndSetLevel(hero,'exp_book')
+				AddAbilityAndSetLevel(hero,'jiaoxie_wudi_hero')
+				AddAbilityAndSetLevel(hero,'wudi')
+			    AddAbilityAndSetLevel(hero,'no_hp_add')
+
+				--装饰信使
+				SetCourier(hero, onduty_hero, onduty_hero_effect)
+
 				local init_hp = 100
 				GameRules:GetGameModeEntity().stat_info[steam_id] = {
 					hp = init_hp,
@@ -2253,31 +2338,11 @@ function InitHeros()
 					hero_damage = 0,
 				}
 
-				local onduty_hero_model = GameRules:GetGameModeEntity().sm_hero_list[onduty_hero]
-
-				hero:SetOriginalModel(onduty_hero_model)
-				hero:SetModel(onduty_hero_model)
-				hero.init_model_scale = GameRules:GetGameModeEntity().sm_hero_size[onduty_hero] or 1
-				hero:SetModelScale(hero.init_model_scale)
-				hero.ori_model = onduty_hero_model
-
 				hero.steam_id = steam_id
 				hero.onduty_hero = onduty_hero
 
 				hero:MoveToPosition(hero:GetAbsOrigin())
-				AddAbilityAndSetLevel(hero,'pick_chess')
-				AddAbilityAndSetLevel(hero,'recall_chess')
-			    AddAbilityAndSetLevel(hero,'remove_chess')
-			    AddAbilityAndSetLevel(hero,'summon_hero')
-			    AddAbilityAndSetLevel(hero,'exp_book')
-
-			    if onduty_hero_effect ~= 'e000' then
-			    	AddAbilityAndSetLevel(hero,onduty_hero_effect)
-			    end
-
-				AddAbilityAndSetLevel(hero,'jiaoxie_wudi_hero')
-				AddAbilityAndSetLevel(hero,'wudi')
-			    AddAbilityAndSetLevel(hero,'no_hp_add')
+				
 			end
 			GameRules:GetGameModeEntity().user_info = user_info_table
 			CustomNetTables:SetTableValue( "dac_table", "player_info", { info = user_info_table, hehe = RandomInt(1,1000)})
@@ -2326,6 +2391,21 @@ function InitHeros()
 			user_info['onduty_hero'] = onduty_hero
 			user_info['onduty_hero_effect'] = onduty_hero_effect
 
+
+			AddAbilityAndSetLevel(hero,'pick_chess')
+			AddAbilityAndSetLevel(hero,'recall_chess')
+		    AddAbilityAndSetLevel(hero,'remove_chess')
+		    AddAbilityAndSetLevel(hero,'summon_hero')
+		    AddAbilityAndSetLevel(hero,'exp_book')
+			AddAbilityAndSetLevel(hero,'jiaoxie_wudi_hero')
+			AddAbilityAndSetLevel(hero,'wudi')
+		    AddAbilityAndSetLevel(hero,'no_hp_add')
+
+
+
+			--装饰信使
+			SetCourier(hero, onduty_hero, onduty_hero_effect)
+
 			local init_hp = 100
 			GameRules:GetGameModeEntity().stat_info[steam_id] = {
 				hp = init_hp,
@@ -2350,31 +2430,11 @@ function InitHeros()
 				hero_damage = 0,
 			}
 
-			local onduty_hero_model = GameRules:GetGameModeEntity().sm_hero_list[onduty_hero]
-
-			hero:SetOriginalModel(onduty_hero_model)
-			hero:SetModel(onduty_hero_model)
-			hero.init_model_scale = GameRules:GetGameModeEntity().sm_hero_size[onduty_hero] or 1
-			hero:SetModelScale(hero.init_model_scale)
-			hero.ori_model = onduty_hero_model
-
 			hero.steam_id = steam_id
 			hero.onduty_hero = onduty_hero
 
 			hero:MoveToPosition(hero:GetAbsOrigin())
-			AddAbilityAndSetLevel(hero,'pick_chess')
-			AddAbilityAndSetLevel(hero,'recall_chess')
-		    AddAbilityAndSetLevel(hero,'remove_chess')
-		    AddAbilityAndSetLevel(hero,'summon_hero')
-		    AddAbilityAndSetLevel(hero,'exp_book')
-
-		    if onduty_hero_effect ~= 'e000' then
-		    	AddAbilityAndSetLevel(hero,onduty_hero_effect)
-		    end
-
-			AddAbilityAndSetLevel(hero,'jiaoxie_wudi_hero')
-			AddAbilityAndSetLevel(hero,'wudi')
-		    AddAbilityAndSetLevel(hero,'no_hp_add')
+			
 		end
 		GameRules:GetGameModeEntity().user_info = user_info_table
 		CustomNetTables:SetTableValue( "dac_table", "player_info", { info = user_info_table, hehe = RandomInt(1,1000)})
@@ -3390,9 +3450,11 @@ function Draw5ChessAndShow(team_id, unlock)
 		return
 	end
 	--把上次剩的洗回棋库
+	h.ban_chess_list = {}
 	if h.curr_chess_table ~= nil then
 		for _,chess in pairs(h.curr_chess_table) do
 			if chess ~= nil then
+				-- table.insert(h.ban_chess_list,chess)
 				AddAChessToChessPool(chess)
 			end
 		end
@@ -3459,7 +3521,7 @@ function RandomDrawChessNew(team_id)
 		end
 		-- this_chess = GameRules:GetGameModeEntity().chess_list_by_mana[chess_level][RandomInt(1,table.maxn(GameRules:GetGameModeEntity().chess_list_by_mana[chess_level]))]
 
-		this_chess = DrawAChessFromChessPool(chess_level, table_11chess)
+		this_chess = DrawAChessFromChessPool(chess_level, table_11chess, h.ban_chess_list)
 	end
 	return this_chess
 end
@@ -3574,14 +3636,6 @@ function DAC:OnRequestBuyChess(keys)
 		return
 	end
 
-	if chess == 'chess_io' then
-		--小精灵发弹幕
-		CustomGameEventManager:Send_ServerToAllClients("bullet",{
-			player_id = h:GetPlayerID(),
-			target = chess,
-		})
-	end
-
 	--判断手牌里是否有两个一样的，有的话直接合成
 	local have_exist_count,chess1,chess2,chess3 = Find2SameChessInHand(h,chess)
 
@@ -3606,6 +3660,14 @@ function DAC:OnRequestBuyChess(keys)
 		key = GetClientKey(team_id),
 		buy_index = buy_index,
 	})
+
+	if chess == 'chess_io' then
+		--小精灵发弹幕
+		CustomGameEventManager:Send_ServerToAllClients("bullet",{
+			player_id = h:GetPlayerID(),
+			target = chess,
+		})
+	end
 
 	--验证完毕，可以购买
 	h.curr_chess_table[buy_index + 1] = nil
@@ -4756,7 +4818,7 @@ function SyncHP(hero)
 				return
 			end
 			GameRules:GetGameModeEntity().send_status[hero.steam_id] = 1
-			local url = "https://autochess.ppbizon.com/game/post/one/@"..GameRules:GetGameModeEntity().steamidlist.."@"..hero.steam_id.."@"..GameRules:GetGameModeEntity().death_rank.."?hehe="..RandomInt(1,10000).."&duration="..math.floor(GameRules:GetGameTime() - GameRules:GetGameModeEntity().START_TIME)..GetSendKey()
+			local url = "https://autochess.ppbizon.com/game/post/one/@"..GameRules:GetGameModeEntity().steamidlist.."@"..hero.steam_id.."@"..GameRules:GetGameModeEntity().death_rank.."?hehe="..RandomInt(1,10000).."&duration="..math.floor(GameRules:GetGameTime() - GameRules:GetGameModeEntity().START_TIME)..GetSendKey()--..'&settings='..json.encode(GameRules:GetGameModeEntity().user_setting[hero.steam_id])
 			GameRules:GetGameModeEntity().send_info[hero.steam_id] = {
 				account_id = hero.steam_id,
 				rank = GameRules:GetGameModeEntity().death_rank,
@@ -4825,7 +4887,7 @@ function SyncHP(hero)
 			end)
 			--1st place player
 			GameRules:GetGameModeEntity().send_status[GameRules:GetGameModeEntity().last_player_steamid] = 1
-			local url = "https://autochess.ppbizon.com/game/post/one/@"..GameRules:GetGameModeEntity().steamidlist.."@"..GameRules:GetGameModeEntity().last_player_steamid.."@1?hehe="..RandomInt(1,10000).."&duration="..math.floor(GameRules:GetGameTime() - GameRules:GetGameModeEntity().START_TIME)..GetSendKey()
+			local url = "https://autochess.ppbizon.com/game/post/one/@"..GameRules:GetGameModeEntity().steamidlist.."@"..GameRules:GetGameModeEntity().last_player_steamid.."@1?hehe="..RandomInt(1,10000).."&duration="..math.floor(GameRules:GetGameTime() - GameRules:GetGameModeEntity().START_TIME)..GetSendKey()--..'&settings='..json.encode(GameRules:GetGameModeEntity().user_setting[last_player_steamid])
 			local tt = GameRules:GetGameModeEntity().stat_info[GameRules:GetGameModeEntity().last_player_steamid]
 			GameRules:GetGameModeEntity().send_info[GameRules:GetGameModeEntity().last_player_steamid] = {
 				account_id = GameRules:GetGameModeEntity().last_player_steamid,
@@ -6306,7 +6368,7 @@ function MirrorARound(teamid)
 				local opp_steam_id = opp_hero.steam_id
 				local opp_model = GameRules:GetGameModeEntity().stat_info[opp_steam_id]['zhugong_model']
 				local opp_effect = GameRules:GetGameModeEntity().stat_info[opp_steam_id]['zhugong_effect']
-				MirrorChesser(teamid,opp_model,opp_effect,opp_hero:GetModelScale())
+				MirrorChesser(teamid,opp_model,opp_effect,opp_hero:GetModelScale(),opp_hero.ori_skin)
 			end)
 
 			for i=1,4 do
@@ -6357,7 +6419,7 @@ function MirrorAChess(teamid,i,j,opp)
 end
 
 --为teamid场地镜像my_opp队伍的敌人棋手镜像
-function MirrorChesser(teamid,opp_model,opp_effect,model_scale)
+function MirrorChesser(teamid,opp_model,opp_effect,model_scale,skin)
 	local mirror_chesser_position = Entities:FindByName(nil,"center"..(teamid-6)):GetAbsOrigin()
 	local mirror_chesser = CreateUnitByName("player_image",mirror_chesser_position+Vector(0,128*6.5,256),true,nil,nil,DOTA_TEAM_NEUTRALS)
 	mirror_chesser:SetForwardVector(Vector(0,-1,0))
@@ -6372,6 +6434,7 @@ function MirrorChesser(teamid,opp_model,opp_effect,model_scale)
 
 		mirror_chesser:SetOriginalModel(new_m)
 		mirror_chesser:SetModel(new_m)
+		mirror_chesser:SetSkin(skin)
 		AddAbilityAndSetLevel(mirror_chesser,'courier_fly')
 	end
 
@@ -6395,7 +6458,7 @@ function LoadCloudEnemy(wave,team)
 			local opp_model = GameRules:GetGameModeEntity().sm_hero_list[cloud_hero]
 
 			Timers:CreateTimer(1,function()
-				MirrorChesser(team,opp_model,cloud_hero_effect,(GameRules:GetGameModeEntity().sm_hero_size[cloud_hero] or 1))
+				MirrorChesser(team,opp_model,cloud_hero_effect,(GameRules:GetGameModeEntity().sm_hero_size[cloud_hero] or 1),(GameRules:GetGameModeEntity().sm_hero_list_skin[cloud_hero] or 0))
 			end)
 		end
 
@@ -6620,15 +6683,11 @@ function ChessAI(u)
 								if dragon_level == 2 then
 									Timers:CreateTimer(1,function()
 										u:SetRangedProjectileName("effect/dragon/baseattack/2.vpcf")
-										-- u:SetOriginalModel("models/items/dragon_knight/fireborn_dragon/fireborn_dragon.vmdl")
-										-- u:SetModel("models/items/dragon_knight/fireborn_dragon/fireborn_dragon.vmdl")
 									end)
 								end
 								if dragon_level == 3 then
 									Timers:CreateTimer(1,function()
 										u:SetRangedProjectileName("effect/dragon/baseattack/3.vpcf")
-										-- u:SetOriginalModel("models/items/dragon_knight/oblivion_blazer_dragon/oblivion_blazer_dragon.vmdl")
-										-- u:SetModel("models/items/dragon_knight/oblivion_blazer_dragon/oblivion_blazer_dragon.vmdl")
 									end)
 								end
 							end
@@ -7997,14 +8056,11 @@ function DAC:OnPlayerChat(keys)
 		hero:FindAbilityByName(tokens[2]):SetLevel(level)
 	end
 	if tokens[1] == "-hero" and GameRules:GetGameModeEntity().myself == true then
-		local onduty_hero_model = GameRules:GetGameModeEntity().sm_hero_list[tokens[2]]
-		hero:SetOriginalModel(onduty_hero_model)
-		hero:SetModel(onduty_hero_model)
-		hero.init_model_scale = GameRules:GetGameModeEntity().sm_hero_size[tokens[2]] or 1
-		hero:SetModelScale(hero.init_model_scale)
-		hero.ori_model = onduty_hero_model
+		--装饰信使
+		SetCourier(hero, tokens[2], 'e000')
+
 		hero.onduty_hero = tokens[2]
-		prt('TEST CODE: COURIER = '..tokens[2]..', SIZE = '..hero.init_model_scale)
+		prt('TEST CODE: COURIER = '..tokens[2])
 		RemoveAbilityAndModifier(hero,'courier_fly')
 		if hero.flyup_effect ~= nil then
 			ParticleManager:DestroyParticle(hero.flyup_effect,true)
@@ -9239,7 +9295,7 @@ function FindAClosestEnemyAndAttack(u)
 	end
 
 	--已经有目标
-	if u.attack_target ~= nil and u.attack_target:IsNull() == false and u.attack_target:IsInvisible() == false and u.attack_target:IsAlive() == true and (u.attack_target:GetAbsOrigin() - u:GetAbsOrigin()):Length2D() < u:Script_GetAttackRange() + u.attack_target:GetHullRadius() + u:GetHullRadius() then
+	if u:GetAttackTarget() ~= nil and u:GetAttackTarget() ~= nil and u:GetAttackTarget():IsNull() == false and u:GetAttackTarget():IsInvisible() == false and u:GetAttackTarget():IsAlive() == true and (u:GetAttackTarget():GetAbsOrigin() - u:GetAbsOrigin()):Length2D() < u:Script_GetAttackRange() + u:GetAttackTarget():GetHullRadius() + u:GetHullRadius() then
 		-- local newOrder = {
 	 -- 		UnitIndex = u:entindex(), 
 	 -- 		OrderType = DOTA_UNIT_ORDER_ATTACK_TARGET,
@@ -9267,16 +9323,18 @@ function FindAClosestEnemyAndAttack(u)
 		end
 	end
 
-	if closest_enemy ~= nil then
-		u.attack_target = closest_enemy
-		-- local newOrder = {
-	 -- 		UnitIndex = u:entindex(), 
-	 -- 		OrderType = DOTA_UNIT_ORDER_ATTACK_TARGET,
-	 -- 		TargetIndex = closest_enemy:entindex(), 
-	 -- 		Queue = 1 
-	 -- 	}
-		-- ExecuteOrderFromTable(newOrder)
-		return 1
+	 if closest_enemy ~= nil then
+        u.attack_target = closest_enemy
+        if u:GetAttackTarget() == nil then
+            local newOrder = {
+                UnitIndex = u:entindex(),
+                OrderType = DOTA_UNIT_ORDER_ATTACK_TARGET,
+                TargetIndex = u.attack_target:entindex(),
+                Queue = 0
+            }
+            ExecuteOrderFromTable(newOrder)
+        end
+        return 1
 	else
 		u.attack_target = nil
 		return nil
@@ -9473,9 +9531,12 @@ function InitChessPool()
 	prt('INIT CHESS POOL OK!')
 end
 
-function DrawAChessFromChessPool(cost, table_11chess)
+function DrawAChessFromChessPool(cost, table_11chess, table_ban_chess)
 	if table_11chess == nil then
 		table_11chess = {}
+	end
+	if table_ban_chess == nil then
+		table_ban_chess = {}
 	end
 	if GameRules:GetGameModeEntity().chess_pool[cost] == nil or table.maxn(GameRules:GetGameModeEntity().chess_pool[cost])<1 then
 		--棋库空了
@@ -9485,6 +9546,9 @@ function DrawAChessFromChessPool(cost, table_11chess)
 	local chess_name = GameRules:GetGameModeEntity().chess_pool[cost][index]
 
 	if FindValueInTable(table_11chess,chess_name) == true then
+		return nil
+	end
+	if FindValueInTable(table_ban_chess,chess_name) == true then
 		return nil
 	end
 
@@ -9973,7 +10037,6 @@ function DAC:OnChangeOndutyHero(keys)
 
 	local onduty_hero = string.split(onduty_hero_new,'_')[1]
 	local onduty_hero_effect = string.split(onduty_hero_new,'_')[2] or ''
-	local onduty_hero_model = GameRules:GetGameModeEntity().sm_hero_list[onduty_hero]
 
 	local hero = PlayerId2Hero(player_id)
 	if keys.player_id ~= keys.PlayerID then
@@ -9981,38 +10044,12 @@ function DAC:OnChangeOndutyHero(keys)
 		return
 	end
 
-	-- if hero.is_changed_hero == true then
-	-- 	hero.is_banned = true
-	-- end
-
-	hero:SetOriginalModel(onduty_hero_model)
-	hero:SetModel(onduty_hero_model)
-	hero.ori_model = onduty_hero_model
+	--装饰信使
+	SetCourier(hero, onduty_hero, onduty_hero_effect)
 	hero.is_changed_hero = true
-	hero.onduty_hero = onduty_hero
-	ShowCourierEffect(hero,1)
-
-	hero.init_model_scale = GameRules:GetGameModeEntity().sm_hero_size[onduty_hero] or 1
-	hero:SetModelScale(hero.init_model_scale)
-
-	--换特效
-	if hero.effect ~= nil then
-		hero:RemoveAbility(hero.effect)
-		hero:RemoveModifierByName('modifier_texiao_star')
-	end
-	hero.effect = onduty_hero_effect
-	if onduty_hero_effect ~= 'e000' then
-		if string.find(GameRules:GetGameModeEntity().effect_list,onduty_hero_effect) then
-			hero:AddAbility(onduty_hero_effect)
-			hero:FindAbilityByName(onduty_hero_effect):SetLevel(1)
-			
-		else
-			hero.is_banned = true
-			return
-		end
-	end
 	
 	local steam_id = hero.steam_id
+	local onduty_hero_model = GameRules:GetGameModeEntity().sm_hero_list[onduty_hero]
 
 	GameRules:GetGameModeEntity().stat_info[steam_id]['zhugong'] = onduty_hero
 	GameRules:GetGameModeEntity().stat_info[steam_id]['zhugong_model'] = onduty_hero_model
@@ -11159,4 +11196,28 @@ function FindUnluckyDogInRange(u, range)
         try_count = try_count + 1
     end
     return unluckydog
+end
+
+function SetCourier(hero, onduty_hero, onduty_hero_effect)
+	local onduty_hero_model = GameRules:GetGameModeEntity().sm_hero_list[onduty_hero]
+	local onduty_hero_skin = GameRules:GetGameModeEntity().sm_hero_list_skin[onduty_hero] or 0
+	hero:SetOriginalModel(onduty_hero_model)
+	hero:SetModel(onduty_hero_model)
+	hero:SetSkin(onduty_hero_skin)
+	hero.init_model_scale = GameRules:GetGameModeEntity().sm_hero_size[onduty_hero] or 1
+	hero:SetModelScale(hero.init_model_scale)
+	hero.ori_model = onduty_hero_model
+	hero.ori_skin = onduty_hero_skin
+	if hero.effect ~= nil then
+		hero:RemoveAbility(hero.effect)
+		hero:RemoveModifierByName('modifier_texiao_star')
+	end
+	if onduty_hero_effect ~= 'e000' then
+    	if string.find(GameRules:GetGameModeEntity().effect_list,onduty_hero_effect) then
+			AddAbilityAndSetLevel(hero,onduty_hero_effect)
+			hero.effect = onduty_hero_effect
+		end
+    end
+    ShowCourierEffect(hero,1)
+    hero.onduty_hero = onduty_hero
 end
